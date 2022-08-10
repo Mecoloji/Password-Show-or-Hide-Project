@@ -1,0 +1,68 @@
+/* ! ===== Google Fonts Start ===== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* ! ===== Google Fonts End ===== */
+
+
+/* ! ===== Reset Start ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+/* ! ===== Reset End ===== */
+
+
+/* ! ===== Body Style Start ===== */
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient( 99deg,  rgba(115, 18,81, 1) 10.6%, rgba(28, 28, 28, 1) 118% );
+}
+/* ! ===== Body Style End ===== */
+
+
+.container {
+    position: relative;
+    height: 55px;
+    width: 320px;
+}
+
+.container input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(238, 238, 238, 0.85);
+    color: #222;
+}
+
+input::placeholder{
+    color: #222;
+    opacity: 0.5;
+}
+
+.container input:valid ~ span{
+    display: block;
+}
+
+.container span {
+    position: absolute;
+    right: 18px;
+    top: 30px;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.container span i.hide-btn:before {
+    content: "\f070";
+}
